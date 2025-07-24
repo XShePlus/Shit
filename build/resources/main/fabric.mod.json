@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "sbx",
+  "version": "1.0-SNAPSHOT",
+  "name": "Shit",
+  "description": "在Minecraft中添加Shit(add Shit into Minecraft)",
+  "authors": ["XShe"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/sbx/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.xshe.sbx.client.SbxDataGenerator"
+    ],
+    "client": [
+      "org.xshe.sbx.client.SbxClient"
+    ],
+    "main": [
+      "org.xshe.sbx.Sbx"
+    ]
+  },
+  "mixins": [
+    "sbx.mixins.json",
+    {
+      "config": "sbx.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric": "*",
+    "minecraft": "1.21.4"
+  }
+}
