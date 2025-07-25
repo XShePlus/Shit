@@ -6,3 +6,7 @@
 /effect give @s minecraft:trial_omen
 /effect give @s minecraft:nausea
 /effect clear
+/time set 1000
+/effect clear
+/gamemode survival
+/gamemode creative

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import org.xshe.sbx.Sbx;
 
@@ -41,5 +42,10 @@ public class Register {
         }
 
         return Registry.register(Registries.BLOCK, blockKey, block);
+    }
+    //声音组注册函数
+     public static SoundEvent soundRegister(String id) {
+        Identifier identifier = Identifier.of(Sbx.MOD_ID, id);
+        return Registry.register(Registries.SOUND_EVENT, identifier, SoundEvent.of(identifier));
     }
 }

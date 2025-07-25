@@ -12,13 +12,7 @@ public class CustomSounds {
         // private empty constructor to avoid accidental instantiation
     }
 
-    public static final SoundEvent SHIT_BLOCK_SOUND = registerSound("shit_block_sound");
-
-    // actual registration of all the custom SoundEvents
-    private static SoundEvent registerSound(String id) {
-        Identifier identifier = Identifier.of(Sbx.MOD_ID, id);
-        return Registry.register(Registries.SOUND_EVENT, identifier, SoundEvent.of(identifier));
-    }
+    public static final SoundEvent SHIT_BLOCK_SOUND = Register.soundRegister("shit_block_sound");
     // 创建自定义声音组：只修改破坏声音
     public static BlockSoundGroup shitBlockGroup = new BlockSoundGroup(
             BlockSoundGroup.BAMBOO.getVolume(),

@@ -12,6 +12,8 @@ import net.minecraft.util.Identifier;
 import org.xshe.sbx.Sbx;
 import org.xshe.sbx.blocks.ShitBlock;
 import org.xshe.sbx.items.Shit;
+import org.xshe.sbx.items.ShitStick;
+import org.xshe.sbx.mtools.TShit;
 
 public class ShitGroup {
     public static final RegistryKey<ItemGroup> shitGroupKey = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Sbx.MOD_ID, "item_group"));
@@ -26,6 +28,8 @@ public class ShitGroup {
         //添加物品
         ItemGroupEvents.modifyEntriesEvent(shitGroupKey).register(itemGroup -> {
             itemGroup.add(Shit.shit);
+            itemGroup.add(ShitStick.shitStick);
+            itemGroup.add(TShit.TSHIT);
             itemGroup.add(ShitBlock.SHIT_BLOCK);
         });
     }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "_",
+    "D",
+    "D"
+  ],
+  "key": {
+    "_": "sbx:shit_block",
+    "D": "sbx:shit_stick"
+  },
+  "result": {
+    "id": "sbx:tshit",
+    "count": 1
+  }
+}
