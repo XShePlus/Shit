@@ -1,1 +1,8 @@
 /gamemode creative
+/gamemode survival
+/gamemode creative
+/effect give @s minecraft:infested
+/effect give @s minecraft:oozing
+/effect give @s minecraft:trial_omen
+/effect give @s minecraft:nausea
+/effect clear

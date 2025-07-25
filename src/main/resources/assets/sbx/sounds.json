@@ -1,0 +1,6 @@
+{
+  "shit_block_sound": {
+    "sounds": ["sbx:block/shit_block_sound"],
+    "subtitle": "sound.sbx.shit_block_sound"
+  }
+}
